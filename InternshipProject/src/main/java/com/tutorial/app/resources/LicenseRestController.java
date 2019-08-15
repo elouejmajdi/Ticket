@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tutorial.app.model.License;
-import com.tutorial.app.repostory.LicenseRepository;
+import com.tutorial.app.repostoriy.LicenseRepository;
+import com.tutorial.app.repostoriy.impl.LicenseRepositoryImpl;
 
 @RestController
 public class LicenseRestController {
 
 	@Autowired
-	private LicenseRepository repository;
+	private LicenseRepositoryImpl repository;
 
 	@GetMapping("/licenes")
 	public List<License> getAllLicenses() {

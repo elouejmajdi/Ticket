@@ -1,4 +1,4 @@
-package com.tutorial.app.repostory;
+package com.tutorial.app.repostoriy;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
